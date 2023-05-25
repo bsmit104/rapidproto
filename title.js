@@ -10,10 +10,16 @@ class Title extends Phaser.Scene {
         this.load.image('fairy', 'fairy.png');
     }
     create() {
-        // this.cameras.main.setBackgroundColor('#000000');
+        this.cameras.main.setBackgroundColor('#FFC0CB');
 
         this.title = this.add.text(100, 200, "Roly Poly: To the End")
         this.title.setScale(3)
+        this.tweens.add({
+            targets: this.title,
+            alpha:0,
+            duration: 500,
+            repeat: -1,
+        });
 
         this.snail = this.add.image(100, 100, 'snail');
         this.fairy = this.add.image(200, 100, 'fairy');
