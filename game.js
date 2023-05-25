@@ -2,12 +2,6 @@
 // tame the javashrek
 'use strict';
 
-var map;
-var smap;
-var player;
-var groundLayer;
-var sgroundLayer;
-let cursors;
 
 var config = {
     type: Phaser.AUTO,
